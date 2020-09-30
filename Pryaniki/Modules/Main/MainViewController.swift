@@ -14,7 +14,12 @@ final class MainViewController: UIViewController {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
+        tableView.register(TextCell.nib, forCellReuseIdentifier: TextCell.identifier)
+        tableView.register(ImageCell.nib, forCellReuseIdentifier: ImageCell.identifier)
+        tableView.register(SelectorCell.nib, forCellReuseIdentifier: SelectorCell.identifier)
         
+        tableView.delegate = self
+        tableView.dataSource = self
         
         return tableView
     }()
@@ -25,20 +30,10 @@ final class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let service = PryanikService()
-        
-        service.loadPryanikData { (result) in
-            switch result {
-            case .success(let response):
-                print(response)
-            case .failure(let error):
-                print(error)
-            }
-        }
-        
+            
         setupUI()
         setupLayout()
+        presenter.loadData()
     }
     
     func setupUI() {
@@ -58,4 +53,36 @@ final class MainViewController: UIViewController {
 // MARK: - Extensions -
 
 extension MainViewController: MainViewInterface {
+    func updateTable() {
+        tableView.reloadData()
+    }
+}
+
+extension MainViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return presenter.tableViewRows
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let item = presenter.tableData[indexPath.row]
+        switch item.name {
+        case .hz:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TextCell.identifier, for: indexPath) as! TextCell
+            cell.configure(with: item)
+            return cell
+        case .picture:
+            let cell = tableView.dequeueReusableCell(withIdentifier: ImageCell.identifier, for: indexPath) as! ImageCell
+            cell.configure(with: item)
+            return cell
+        case .selector:
+            let cell = tableView.dequeueReusableCell(withIdentifier: SelectorCell.identifier, for: indexPath) as! SelectorCell
+            cell.configure(with: item)
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectRowAt(row: indexPath.row)
+        tableView.selectRow(at: nil, animated: false, scrollPosition: .none)
+    }
 }

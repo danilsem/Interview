@@ -23,15 +23,15 @@ struct PryanikItem {
     let name: PryanikViewType
     let data: Any
     
-    func asHzItem() throws -> PryanikHzItem? {
+    func asHzItem() -> PryanikHzItem? {
         return data as? PryanikHzItem
     }
     
-    func asPictureItem() throws -> PryanikPictureItem? {
+    func asPictureItem() -> PryanikPictureItem? {
         return data as? PryanikPictureItem
     }
     
-    func asSelectorItem() throws -> PryanikSelectorItem? {
+    func asSelectorItem() -> PryanikSelectorItem? {
         return data as? PryanikSelectorItem
     }
 }

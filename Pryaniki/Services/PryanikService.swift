@@ -22,6 +22,8 @@ protocol PryanikServiceProtocol {
 
 final class PryanikService {
     
+    static let shared = PryanikService()
+    private init() {}
 }
 
 extension PryanikService: PryanikServiceProtocol {

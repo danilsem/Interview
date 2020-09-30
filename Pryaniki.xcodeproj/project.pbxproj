@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84C047922524A80F00F0F8B0 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C047902524A80E00F0F8B0 /* ImageCell.swift */; };
+		84C047932524A80F00F0F8B0 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C047912524A80E00F0F8B0 /* ImageCell.xib */; };
+		84C047962524A81E00F0F8B0 /* SelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C047942524A81E00F0F8B0 /* SelectorCell.swift */; };
+		84C047972524A81E00F0F8B0 /* SelectorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C047952524A81E00F0F8B0 /* SelectorCell.xib */; };
 		84FECABA252454D800228903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAB9252454D800228903 /* AppDelegate.swift */; };
 		84FECABC252454D800228903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECABB252454D800228903 /* SceneDelegate.swift */; };
 		84FECAC1252454D800228903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FECABF252454D800228903 /* Main.storyboard */; };
@@ -21,9 +25,15 @@
 		84FECAE725245BB700228903 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAE625245BB700228903 /* ViewInterface.swift */; };
 		84FECAEA2524757F00228903 /* PryanikService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAE92524757F00228903 /* PryanikService.swift */; };
 		84FECAED2524789C00228903 /* Pryanik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAEC2524789C00228903 /* Pryanik.swift */; };
+		84FECAF42524A48700228903 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAF22524A48700228903 /* TextCell.swift */; };
+		84FECAF52524A48700228903 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FECAF32524A48700228903 /* TextCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84C047902524A80E00F0F8B0 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		84C047912524A80E00F0F8B0 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		84C047942524A81E00F0F8B0 /* SelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorCell.swift; sourceTree = "<group>"; };
+		84C047952524A81E00F0F8B0 /* SelectorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectorCell.xib; sourceTree = "<group>"; };
 		84FECAB6252454D800228903 /* Pryaniki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pryaniki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FECAB9252454D800228903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FECABB252454D800228903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +50,8 @@
 		84FECAE625245BB700228903 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
 		84FECAE92524757F00228903 /* PryanikService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikService.swift; sourceTree = "<group>"; };
 		84FECAEC2524789C00228903 /* Pryanik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pryanik.swift; sourceTree = "<group>"; };
+		84FECAF22524A48700228903 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		84FECAF32524A48700228903 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		84FECAD02524566500228903 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				84FECAF12524A45000228903 /* Cells */,
 				84FECAD925245A2F00228903 /* MainInterfaces.swift */,
 				84FECADA25245A2F00228903 /* MainPresenter.swift */,
 				84FECADB25245A2F00228903 /* MainViewController.swift */,
@@ -129,6 +142,19 @@
 				84FECAEC2524789C00228903 /* Pryanik.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		84FECAF12524A45000228903 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAF22524A48700228903 /* TextCell.swift */,
+				84FECAF32524A48700228903 /* TextCell.xib */,
+				84C047902524A80E00F0F8B0 /* ImageCell.swift */,
+				84C047912524A80E00F0F8B0 /* ImageCell.xib */,
+				84C047942524A81E00F0F8B0 /* SelectorCell.swift */,
+				84C047952524A81E00F0F8B0 /* SelectorCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +215,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C047972524A81E00F0F8B0 /* SelectorCell.xib in Resources */,
 				84FECAC6252454E700228903 /* LaunchScreen.storyboard in Resources */,
 				84FECAC3252454E700228903 /* Assets.xcassets in Resources */,
+				84FECAF52524A48700228903 /* TextCell.xib in Resources */,
+				84C047932524A80F00F0F8B0 /* ImageCell.xib in Resources */,
 				84FECAC1252454D800228903 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,9 +239,12 @@
 				84FECAE525245AE400228903 /* BaseWireframe.swift in Sources */,
 				84FECAE725245BB700228903 /* ViewInterface.swift in Sources */,
 				84FECABC252454D800228903 /* SceneDelegate.swift in Sources */,
+				84C047962524A81E00F0F8B0 /* SelectorCell.swift in Sources */,
 				84FECADF25245A2F00228903 /* MainPresenter.swift in Sources */,
 				84FECAE025245A2F00228903 /* MainViewController.swift in Sources */,
+				84FECAF42524A48700228903 /* TextCell.swift in Sources */,
 				84FECAE125245A2F00228903 /* MainInteractor.swift in Sources */,
+				84C047922524A80F00F0F8B0 /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
