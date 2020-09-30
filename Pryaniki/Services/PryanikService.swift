@@ -41,12 +41,16 @@ extension PryanikService: PryanikServiceProtocol {
         
         URLSession.shared.dataTask(with: finalUrl) { (data, response, error) in
             if error != nil {
-                completion(.failure(.badRequest))
+                DispatchQueue.main.async {
+                    completion(.failure(.badRequest))
+                }
                 return
             }
             
             guard let data = data else {
-                completion(.failure(.badRequest))
+                DispatchQueue.main.async {
+                    completion(.failure(.badRequest))
+                }
                 return
             }
             
