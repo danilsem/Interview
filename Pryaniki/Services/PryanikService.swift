@@ -137,8 +137,9 @@ extension PryanikService: PryanikServiceProtocol {
                     }
                     return
                 }
-                completion(.failure(.decodeError))
-                
+                DispatchQueue.main.async {
+                    completion(.failure(.decodeError))
+                }
             }
         }.resume()
     }
