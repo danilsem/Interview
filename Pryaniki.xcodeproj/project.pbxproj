@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		84FECABA252454D800228903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAB9252454D800228903 /* AppDelegate.swift */; };
 		84FECABC252454D800228903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECABB252454D800228903 /* SceneDelegate.swift */; };
-		84FECABE252454D800228903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECABD252454D800228903 /* ViewController.swift */; };
 		84FECAC1252454D800228903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FECABF252454D800228903 /* Main.storyboard */; };
 		84FECAC3252454E700228903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FECAC2252454E700228903 /* Assets.xcassets */; };
 		84FECAC6252454E700228903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FECAC4252454E700228903 /* LaunchScreen.storyboard */; };
+		84FECADE25245A2F00228903 /* MainInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAD925245A2F00228903 /* MainInterfaces.swift */; };
+		84FECADF25245A2F00228903 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECADA25245A2F00228903 /* MainPresenter.swift */; };
+		84FECAE025245A2F00228903 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECADB25245A2F00228903 /* MainViewController.swift */; };
+		84FECAE125245A2F00228903 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECADC25245A2F00228903 /* MainInteractor.swift */; };
+		84FECAE225245A2F00228903 /* MainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECADD25245A2F00228903 /* MainWireframe.swift */; };
+		84FECAE525245AE400228903 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAE425245AE400228903 /* BaseWireframe.swift */; };
+		84FECAE725245BB700228903 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAE625245BB700228903 /* ViewInterface.swift */; };
+		84FECAEA2524757F00228903 /* PryanikService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAE92524757F00228903 /* PryanikService.swift */; };
+		84FECAED2524789C00228903 /* Pryanik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FECAEC2524789C00228903 /* Pryanik.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84FECAB6252454D800228903 /* Pryaniki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pryaniki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FECAB9252454D800228903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FECABB252454D800228903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84FECABD252454D800228903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84FECAC0252454D800228903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FECAC2252454E700228903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FECAC5252454E700228903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FECAC7252454E700228903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FECAD925245A2F00228903 /* MainInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaces.swift; sourceTree = "<group>"; };
+		84FECADA25245A2F00228903 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		84FECADB25245A2F00228903 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		84FECADC25245A2F00228903 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		84FECADD25245A2F00228903 /* MainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframe.swift; sourceTree = "<group>"; };
+		84FECAE425245AE400228903 /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		84FECAE625245BB700228903 /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		84FECAE92524757F00228903 /* PryanikService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PryanikService.swift; sourceTree = "<group>"; };
+		84FECAEC2524789C00228903 /* Pryanik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pryanik.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,63 @@
 		84FECAB8252454D800228903 /* Pryaniki */ = {
 			isa = PBXGroup;
 			children = (
+				84FECAEB2524788700228903 /* Models */,
+				84FECAE82524756000228903 /* Services */,
+				84FECAE325245AC700228903 /* Utility */,
+				84FECACD252455F100228903 /* Modules */,
 				84FECAB9252454D800228903 /* AppDelegate.swift */,
 				84FECABB252454D800228903 /* SceneDelegate.swift */,
-				84FECABD252454D800228903 /* ViewController.swift */,
 				84FECABF252454D800228903 /* Main.storyboard */,
 				84FECAC2252454E700228903 /* Assets.xcassets */,
 				84FECAC4252454E700228903 /* LaunchScreen.storyboard */,
 				84FECAC7252454E700228903 /* Info.plist */,
 			);
 			path = Pryaniki;
+			sourceTree = "<group>";
+		};
+		84FECACD252455F100228903 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAD02524566500228903 /* Main */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		84FECAD02524566500228903 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAD925245A2F00228903 /* MainInterfaces.swift */,
+				84FECADA25245A2F00228903 /* MainPresenter.swift */,
+				84FECADB25245A2F00228903 /* MainViewController.swift */,
+				84FECADC25245A2F00228903 /* MainInteractor.swift */,
+				84FECADD25245A2F00228903 /* MainWireframe.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84FECAE325245AC700228903 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAE425245AE400228903 /* BaseWireframe.swift */,
+				84FECAE625245BB700228903 /* ViewInterface.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		84FECAE82524756000228903 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAE92524757F00228903 /* PryanikService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		84FECAEB2524788700228903 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84FECAEC2524789C00228903 /* Pryanik.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FECABE252454D800228903 /* ViewController.swift in Sources */,
+				84FECAED2524789C00228903 /* Pryanik.swift in Sources */,
+				84FECAEA2524757F00228903 /* PryanikService.swift in Sources */,
 				84FECABA252454D800228903 /* AppDelegate.swift in Sources */,
+				84FECAE225245A2F00228903 /* MainWireframe.swift in Sources */,
+				84FECADE25245A2F00228903 /* MainInterfaces.swift in Sources */,
+				84FECAE525245AE400228903 /* BaseWireframe.swift in Sources */,
+				84FECAE725245BB700228903 /* ViewInterface.swift in Sources */,
 				84FECABC252454D800228903 /* SceneDelegate.swift in Sources */,
+				84FECADF25245A2F00228903 /* MainPresenter.swift in Sources */,
+				84FECAE025245A2F00228903 /* MainViewController.swift in Sources */,
+				84FECAE125245A2F00228903 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
