@@ -28,7 +28,7 @@ final class PryanikService {
 
 extension PryanikService: PryanikServiceProtocol {
     var baseUrl: String {
-        "https://pryaniky.com/"
+        "https://chat.pryaniky.com/"
     }
     
     func loadPryanikData(completion: @escaping (Result<PryanikResponse, PryanikServiceError>) -> ()) {
@@ -37,7 +37,7 @@ extension PryanikService: PryanikServiceProtocol {
             return
         }
         
-        finalUrl.appendPathComponent("static/json/sample.json")
+        finalUrl.appendPathComponent("json/data-default-order-custom-data-in-view.json")
         
         URLSession.shared.dataTask(with: finalUrl) { (data, response, error) in
             if error != nil {
@@ -119,16 +119,18 @@ extension PryanikService: PryanikServiceProtocol {
                                 let item = PryanikItem(name: type, data: itemData)
                                 pryanikItems.append(item)
                             }
+                            else {
+                                continue
+                            }
                         }
                     }
                     for item in pryanikView {
-                        guard let type = PryanikViewType(rawValue: item) else {
-                            DispatchQueue.main.async {
-                                completion(.failure(.decodeError))
-                            }
-                            return
+                        if let type = PryanikViewType(rawValue: item) {
+                            pryanikTypes.append(type)
                         }
-                        pryanikTypes.append(type)
+                        else {
+                            continue
+                        }
                     }
                     
                     let response = PryanikResponse(data: pryanikItems, view: pryanikTypes)
